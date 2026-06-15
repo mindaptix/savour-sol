@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Savour Sol digital QR menu: Mexican fire and continental comfort."
+    />
+    <title>Savour Sol Menu</title>
+    <link rel="stylesheet" href="style.css?v=8" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-copy">
+        <img class="brand-logo" src="images/savoura.jpeg" alt="Savour Sol" />
+        <p class="eyebrow">A modern table of Mexican fire & continental comfort</p>
+      </div>
+    </header>
+
+    <main class="menu-shell">
+      <section class="controls" aria-label="Menu search and categories">
+        <label class="search-box">
+          <span>Search</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search tacos, coffee, pizza..."
+            autocomplete="off"
+          />
+        </label>
+        <div id="categoryChips" class="category-chips" aria-label="Categories"></div>
+      </section>
+
+      <section class="menu-status" aria-live="polite">
+        <p id="resultCount"></p>
+      </section>
+
+      <section id="menuList" class="menu-list" aria-label="Savour Sol menu"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
