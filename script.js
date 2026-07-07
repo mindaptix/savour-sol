@@ -3,7 +3,11 @@ const menu = [
     category: "Starters",
     items: [
       ["Molten Lava Cheese Bomb", "Crispy shell bursting with gooey, rich melted cheese inside.", "349.00"],
-      ["The Chimichanga Crunch", "Golden deep-fried tortilla stuffed with savoury mushroom, veggie or chicken filling.", "499.00 / 549.00"],
+      [
+        "The Chimichanga Crunch",
+        "(Spicy Chicken / Truffle Mushroom / Veg Fiesta) Golden deep-fried tortilla stuffed with savoury mushroom, veggie or chicken filling.",
+        "499.00 / 549.00",
+      ],
       ["Firestarter Chicken Bites", "Juicy chicken ignited with smoky habanero chilli and bold spices.", "399.00"],
       ["Nacho Royale", "Towering crispy nachos crowned with salsas, cheese and fresh toppings.", "399.00"],
       ["Wood Fired Garlic Bread", "Artisan bread kissed by woodfire, slathered in roasted garlic butter.", "399.00"],
@@ -12,10 +16,18 @@ const menu = [
   {
     category: "Sharing Plates",
     items: [
-      ["Spiced Lamb Morsels", "Tender slow-spiced minced lamb skewers with smoky, aromatic char.", "349.00"],
+      ["Spiced Lamb Morsels", "Tender slow-spiced minced lamb skewers with smoky, aromatic char.", "649.00"],
       ["Garden Lasagna Bites", "Bite-sized lasagna layered with earthy mushroom, corn and fresh spinach.", "499.00"],
-      ["Arepa Street Sliders", "Golden deep-fried tortilla stuffed with savoury mushroom, veggie or chicken filling.", "499.00 / 549.00"],
-      ["Crispy Tostada Stack", "Crunchy tostada piled with vibrant toppings and zesty lime crema.", "399.00"],
+      [
+        "Arepa Street Sliders",
+        "(Spicy Chicken / Truffle Mushroom / Veg Fiesta) Golden deep-fried tortilla stuffed with savoury mushroom, veggie or chicken filling.",
+        "499.00 / 549.00",
+      ],
+      [
+        "Crispy Tostada Stack",
+        "(Chicken / Truffle Mushroom / Veg Fiesta) Crunchy tostada piled with vibrant toppings and zesty lime crema.",
+        "399.00",
+      ],
     ],
   },
   {
@@ -62,6 +74,26 @@ const menu = [
       ["Truffle Cloud Gnocchi", "Pillowy potato gnocchi bathed in truffle cream with sautéed wild mushrooms.", "599.00"],
       ["Fire & Citrus Asada (Chicken)", "Citrus-marinated grilled chicken with charred asada spice and chimichurri.", "549.00"],
       ["Fire & Citrus Asada (Mutton)", "Bold grilled mutton in tangy asada marinade with smoky chimichurri sauce.", "799.00"],
+      ["Slow & Rich Lamb Lasagna", "Layers of braised lamb ragù, béchamel and pasta baked to bubbling perfection.", "749.00"],
+    ],
+  },
+  {
+    category: "Pasta",
+    items: [
+      [
+        "Creamy Alfredo Pasta",
+        "(Chicken / Veg) Pasta in a rich Parmesan cream sauce with your choice of vegetables or chicken.",
+        "549/499",
+      ],
+      ["Fiery Arrabbiata", "(Chicken / Veg) Spiced chicken, roasted peppers and chilli flakes on tangy tomato base.", "549/499"],
+      ["Rosé Cream Pasta", "(Chicken / Veg) Pasta in a creamy tomato sauce with your choice of vegetables or chicken.", "549/499"],
+    ],
+  },
+  {
+    category: "Pizza Bun Burger",
+    items: [
+      ["Truffle Mushroom & Exotic Veg", "Loaded with truffle mushrooms, exotic vegetables, and melted cheese in a toasted pizza bun.", "499.00"],
+      ["Chicken Parmigiana", "Crispy chicken, rich marinara, and melted Parmesan cheese served in a toasted pizza bun.", "599.00"],
     ],
   },
   {
@@ -80,7 +112,6 @@ const menu = [
       ["Black Truffle Melt", "Wild mushrooms and truffle oil sealed in a golden, cheese-filled quesadilla.", "549.00"],
       ["Creamy Dreamy Chicken Melt", "Shredded chicken in herby cream cheese, grilled to golden perfection.", "579.00"],
       ["Paprika Bliss Quesadilla", "Smoky paprika chicken with peppers and melted cheese in a crisp wrap.", "579.00"],
-      ["Slow & Rich Lamb Lasagna", "Layers of braised lamb ragù, béchamel and pasta baked to bubbling perfection.", "749.00"],
     ],
   },
   {
@@ -93,35 +124,45 @@ const menu = [
     ],
   },
   {
+    category: "Shakes",
+    items: [
+      ["Vanilla Dream", "Classic vanilla shake topped with whipped cream.", "349.00"],
+      ["Chocolate Crave", "Rich, creamy chocolate shake for every chocolate lover.", "349.00"],
+      ["Oreo Overload", "A thick Oreo shake loaded with crunchy cookie goodness.", "349.00"],
+      ["Caramel Indulgence", "Silky caramel shake finished with a buttery caramel drizzle.", "349.00"],
+      ["Caramel Indulgence", "Silky caramel shake finished with a buttery caramel drizzle.", "349.00"],
+    ],
+  },
+  {
     category: "Beverage",
     items: [
       ["Tropical Basil Kiss", "Tangy passion fruit muddled with fresh basil and sparkling citrus water.", "249.00"],
-      ["Minty Fresh Crush", "Fresh lime, crushed mint and soda over ice, clean, cool and refreshing.", "249.00"],
+      ["Minty Fresh Crush", "Fresh lime, crushed mint and soda over ice - clean, cool and refreshing.", "249.00"],
       ["Blush Velvet Elixir", "Silky rose, berry and lychee blend with a soft floral finish.", "249.00"],
       ["Green Garden Bloom", "Cucumber, green apple and mint cooler with a hint of elderflower.", "249.00"],
       ["Elderflower Dusk", "Floral elderflower with orange and passion fruit, fading into a sunset hue.", "249.00"],
-      ["Cool Cucumber Fizz", "Crisp cucumber, zingy lime and sparkling water, effervescently refreshing.", "249.00"],
-      ["Coke / Diet Coke", "Classic chilled soft drink.", "150.00"],
-      ["Red Bull", "Chilled energy drink.", "240.00"],
+      ["Cool Cucumber Fizz", "Crisp cucumber, zingy lime and sparkling water -- effervescently refreshing.", "249.00"],
+      ["Coke/Diet Coke", "", "150.00"],
+      ["Red Bull", "", "240.00"],
     ],
   },
   {
     category: "Coffee",
     items: [
       ["Cranberry Cold Brew", "Smooth cold brew espresso brightened with tart cranberry and citrus.", "299.00"],
-      ["Madrid Iced Latte", "Bold espresso over condensed milk and ice, rich, sweet and chilled.", "298.00"],
-      ["Espresso Tonic Fizz", "Double espresso poured over sparkling tonic, bittersweet and effervescent.", "249.00"],
-      ["Citrus Espresso Bloom", "Bright espresso with fresh orange zest oil, a floral citrus awakening.", "299.00"],
+      ["Madrid Iced Latte", "Bold espresso over condensed milk and ice -- rich, sweet and chilled.", "298.00"],
+      ["Espresso Tonic Fizz", "Double espresso poured over sparkling tonic - bittersweet and effervescent.", "249.00"],
+      ["Citrus Espresso Bloom", "Bright espresso with fresh orange zest oil -- a floral citrus awakening.", "299.00"],
       ["Pure Shot Espresso", "Concentrated, velvety single-origin espresso with rich crema on top.", "199.00"],
       ["Velvet Cappuccino", "Balanced espresso layered with silky steamed milk and airy foam.", "249.00"],
-      ["Silk Latte", "Smooth espresso blended with steamed whole milk, gentle and creamy.", "249.00"],
-      ["Midnight Cold Brew", "Slow-steeped 12-hour cold brew, bold, smooth and never bitter.", "249.00"],
-      ["Drown in Bliss Affogato", "Hot espresso shot poured over velvety vanilla gelato, hot meets cold.", "298.00"],
-      ["Cloud Nine Frappe", "Blended iced coffee with cream, thick, frothy and irresistibly smooth.", "289.00"],
-      ["Dark & Icy Americano", "Double espresso diluted over ice, bold, clean and powerfully refreshing.", "249.00"],
-      ["Glacier Latte", "Chilled espresso and cold milk poured over ice, effortlessly smooth.", "248.00"],
-      ["Caramel Dream Frappe", "Blended iced coffee swirled with buttery caramel sauce and whipped cream.", "299.00"],
-      ["Nitro Thunder Brew", "Nitrogen-infused cold brew, cascading, creamy and silky-smooth naturally.", "349.00"],
+      ["Silk Latte", "Smooth espresso blended with steamed whole milk - gentle and creamy.", "249.00"],
+      ["Midnight Cold Brew", "Slow-steeped 12-hour cold brew - bold, smooth and never bitter.", "249.00"],
+      ["Drown in Bliss Affogato", "Hot espresso shot poured over velvety vanilla gelato - hot meets cold.", "298.00"],
+      ["Cloud Nine Frappé", "Blended iced coffee with cream - thick, frothy and irresistibly smooth.", "289.00"],
+      ["Dark & Icy Americano", "Double espresso diluted over ice - bold, clean and powerfully refreshing.", "249.00"],
+      ["Glacier Latte", "Chilled espresso and cold milk poured over ice - effortlessly smooth.", "248.00"],
+      ["Caramel Dream Frappé", "Blended iced coffee swirled with buttery caramel sauce and whipped cream.", "299.00"],
+      ["Nitro Thunder Brew", "Nitrogen-infused cold brew - cascading, creamy and silky-smooth naturally.", "349.00"],
     ],
   },
   {
@@ -136,7 +177,20 @@ const menu = [
     items: [
       {
         title: "REGULAR",
-        items: ["PMC", "RPG", "Sun Downer", "Commissioner", "Sea breezer", "Bmw", "Ice crush", "Rajni gandha", "Chocolate/cold coffee", "Crown flavour"],
+        items: [
+          "PMC",
+          "RPG",
+          "Sun Downer",
+          "Commisioner",
+          "Sea breezer",
+          "Bmw",
+          "Ice crush",
+          "Rajni gandha",
+          "Chocolate/cold coffee",
+          "Crown flavour",
+          "Zafran",
+          "Nawab",
+        ],
       },
       {
         title: "SPECIAL",
@@ -158,24 +212,27 @@ const resultCount = document.querySelector("#resultCount");
 let activeCategory = "All";
 
 const categoryIcons = {
-  All: "✦",
-  Starters: "🍽",
-  "Sharing Plates": "🥘",
-  "Taco Bar": "🌮",
-  "Dippable Sliders": "🍔",
-  "Mac & Cheese Bar": "🧀",
-  "Large Plates": "🍲",
-  Pizza: "🍕",
-  Quesadillas: "🌯",
-  "Burrito Bowl": "🥣",
-  Beverage: "🥤",
-  Coffee: "☕",
-  Dessert: "🍰",
-  Sheesha: "💨",
+  All: "*",
+  Starters: "ST",
+  "Sharing Plates": "SP",
+  "Taco Bar": "TC",
+  "Dippable Sliders": "SL",
+  "Mac & Cheese Bar": "MC",
+  "Large Plates": "LP",
+  Pasta: "PA",
+  "Pizza Bun Burger": "PB",
+  Pizza: "PZ",
+  Quesadillas: "QS",
+  "Burrito Bowl": "BB",
+  Shakes: "SH",
+  Beverage: "BV",
+  Coffee: "CF",
+  Dessert: "DS",
+  Sheesha: "SS",
 };
 
 function formatPrice(price) {
-  return price === "Ask" ? "Ask" : `₹${price}`;
+  return `₹${price}`;
 }
 
 function getFilteredMenu() {
@@ -194,17 +251,13 @@ function getFilteredMenu() {
                 ),
               }))
               .filter((group) => group.items.length > 0)
-          : section.items.filter(([name, desc]) => {
-              const haystack = `${section.category} ${name} ${desc}`.toLowerCase();
+          : section.items.filter(([name, desc, price]) => {
+              const haystack = `${section.category} ${name} ${desc} ${price}`.toLowerCase();
               return haystack.includes(term);
             });
       return { ...section, items };
     })
-    .filter((section) =>
-      section.category === "Sheesha"
-        ? section.items.length > 0
-        : section.items.length > 0
-    );
+    .filter((section) => section.items.length > 0);
 }
 
 function renderCategories() {
@@ -213,7 +266,7 @@ function renderCategories() {
     .map(
       (category) => `
         <button class="chip ${category === activeCategory ? "active" : ""}" data-category="${category}">
-          <span class="chip-icon" aria-hidden="true">${categoryIcons[category] || "•"}</span>
+          <span class="chip-icon" aria-hidden="true">${categoryIcons[category] || "-"}</span>
           <span>${category}</span>
         </button>
       `
@@ -269,7 +322,7 @@ function renderMenu() {
                     `
                   )
                   .join("")}
-                ${section.items.length === 0 ? `<div class="empty-state">No items match your search.</div>` : ""}
+                <p class="gst-note">GST will be charged extra as applicable.</p>
               </article>
             `
             : `
@@ -282,13 +335,14 @@ function renderMenu() {
                       ([name, desc, price]) => `
                         <div class="menu-item">
                           <h3 class="item-name">${name}</h3>
-                          <p class="item-desc">${desc}</p>
+                          ${desc ? `<p class="item-desc">${desc}</p>` : ""}
                           <div class="price">${formatPrice(price)}</div>
                         </div>
                       `
                     )
                     .join("")}
                 </div>
+                <p class="gst-note">GST will be charged extra as applicable.</p>
               </article>
             `
         }
